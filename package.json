@@ -1,0 +1,19 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "lite-server --baseDir=dist",
+    "start": "concurrently \"json-server --watch db.json\" \"browser-sync start --server --file . --host --port 5000 --startPath index.html\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.0.0",
+    "dayjs": "^1.11.10",
+    "json-server": "^1.0.0-alpha.23",
+    "lite-server": "^2.6.1"
+  }
+}
